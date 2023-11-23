@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/styles/style.css?v=8989">
+</head>
+<body>
+    <div class="nav-bar" id="navbar">
+        <ul class="nav-items">
+             <a href="#">Home </a>
+             <a href="about-me.html">About Me </a>
+             <a href="projects.html">Projects </a>
+             <a href="contact.html">Contact Me </a>
+        </ul>
+    </div>
+    <section id="content">
+    <div class="slide">
+        <img id="slide-image"  style="height: 720px; width: 100%">
+        <div class="caption"></div>
+    </div>
+    <div class="about-row">
+        <div style="flex:1;">
+            <img src="assets/img/me.png" style="height:300px;" alt="my dp">
+        </div>
+        <div class="about-me-brief" style="flex: 2;">
+        
+            <ul>
+                <li>
+                    <div class="col">Name</div>
+                    <div class="col">Milen</div>
+                </li>
+                <li>
+                    <div class="col">Gender</div>
+                    <div class="col">Female</div>
+                </li>
+                <li>
+                    <div class="col">Profession</div>
+                    <div class="col">IT Expert</div>
+                </li>
+                <li>
+                    <div class="col">Career Statement</div>
+                    <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem impedit necessitatibus tenetur doloribus molestiae, consequuntur fugit quod ea rerum suscipit eius nemo sunt aspernatur aliquam veniam commodi voluptate ab! Ducimus!</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+    
+</body>
+
+
+
+
+<script>
+    //slide images
+    var captions = ['Lake','Mountain', 'Trees']
+    var images = ["assets/img/img1.jpg", "assets/img/img2.jpg", "assets/img/img3.jpg"]
+    var caption = document.querySelector(".caption")
+    var slideImage = document.querySelector("#slide-image")
+
+    slideImage.src = images[0]
+    caption.innerText = captions[0]
+    var i = 1;
+    setInterval(function(){        
+        slideImage.src = images[i]
+        caption.innerText = captions[i]
+        i++
+        if(i>2){
+            i=0;
+        }
+    },5000)
+
+</script>
+
+</html>

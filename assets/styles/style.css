@@ -1,0 +1,162 @@
+body{
+    background-color: rgb(101, 249, 222);
+}
+
+
+
+*{
+    padding: 10;
+    margin: auto;
+}
+
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+    width:auto;
+    margin-left: 100px;
+    padding-left: 100px;
+    font-size: 25px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+
+
+
+h2{
+    text-align: center;
+    margin: 10px;
+}
+
+.btn{
+    height: 45px;
+    color: #000;
+    border: 0;
+    font-size: 25px;
+    margin: 15px;
+    padding: 15px 20px 20px 15px;
+    border-radius: 5px;
+}
+
+.btn-primary{
+    background-color: green;
+    color: #fff;
+}
+
+.form-group{
+    margin: 10px;
+
+}
+
+.form-group label, input, textarea{
+    font-size: 25px;
+}
+
+.form-group input, textarea{
+    width: 100%;
+}
+
+.form-group input:focus, textarea:focus{
+    color: green;
+}
+
+.about-me-brief{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-brief ul li{
+    list-style: none;
+    display: flex;
+}
+.about-row{
+    display: flex;
+}
+.col{
+    width: 50%;
+    margin: 5px;
+    padding: 5px;
+    float: left;
+    /* column-gap: 50px; */
+}
+.row{
+    display: flex;
+    margin: 10px;
+    /* gap: 50px 50px; */
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.col-3{
+    float: left;
+    width: 33.33%;
+}
+.col-4{
+    float: left;
+    width: 25%;
+}
+
+/* slide caption */
+.slide{
+    position: relative;
+} 
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 45px;
+    /* You can adjust the style of the caption as per your preference */
+}
+
+.project{
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.project h4{
+    color: blue;
+}
+
+.project a{
+    color: #000;
+    text-decoration: none;
+}
+  
+

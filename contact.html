@@ -16,27 +16,46 @@
         </ul>
     </div>
     <section id="content">
-    <div>
-        <h2>Leave Me a Message</h2>
-        <form id="contactForm">
-            <div class="form-group">
-                <label for="">Name</label><br>
-                <input type="text" id="name" />
+        <div class="row">
+            <div class="col-2">
+                <ul>
+                    <li>Location: Kampala</li>
+                    <li>Email: mily.mili@yahoo.com</li>
+                    <li>Mobile: 0759 837980</li>
+                </ul>
             </div>
-            <div class="form-group">
-                <label for="">Email&nbsp;<span style="color: red;">*</span></span></label><br>
-                <input type="email" id="email" />
+
+            <div class="col-8">
+                <h2>Leave Me a Message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="">Name</label><br>
+                        <input type="text" id="name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email&nbsp;<span style="color: red;">*</span></span></label><br>
+                        <input type="email" id="email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="">Message&nbsp;<span style="color: red;">*</span></span></label><br>
+                        <textarea id="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn success" style="margin: 20px;">Submit</button>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="">Message&nbsp;<span style="color: red;">*</span></span></label><br>
-                <textarea id="message" rows="4"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
+        </div>
+    
+    
 </section>
 </body>
-
+<style>
+    /* .col ul{
+        margin-top: 100px;
+    } */
+    li{
+        list-style: none;
+    }
+</style>
 <script src="assets/scripts/script.js"></script>
 <script>
     // cssVersion('website/contact.html')

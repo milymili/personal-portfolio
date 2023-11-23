@@ -55,14 +55,34 @@ h2{
 }
 
 .btn{
-    height: 45px;
+    /* height: 45px;
     color: #000;
     border: 0;
     font-size: 25px;
     margin: 15px;
     padding: 15px 20px 20px 15px;
-    border-radius: 5px;
+    border-radius: 5px; */
+
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; 
 }
+
+.success {background-color: #04AA6D;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.warning {background-color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
+
+.danger {background-color: #f44336;} /* Red */
+.danger:hover {background: #da190b;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */
+.default:hover {background: #ddd;}
 
 .btn-primary{
     background-color: green;
@@ -126,7 +146,15 @@ h2{
     float: left;
     width: 25%;
 }
-
+.col-2{
+    float: left;
+    width: 20%;
+}
+.col-8{
+    float: left;
+    width: 80%;
+}
+    
 /* slide caption */
 .slide{
     position: relative;
@@ -147,7 +175,8 @@ h2{
 
 .project{
     font-size: 25px;
-    margin-left: 20px;
+    margin: 20px;
+
 }
 
 .project h4{
@@ -157,6 +186,10 @@ h2{
 .project a{
     color: #000;
     text-decoration: none;
+}
+
+li{
+    list-style: none;
 }
   
 
